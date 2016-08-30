@@ -19,10 +19,7 @@ public class StepDetectionHandler implements SensorEventListener {
     private float DistanceTraveled;
     private float[] acceleration = new float[3];
 
-    //Listener
-    public interface StepDetectionListener {
-        public void onNewStep( float stepSize);
-    }
+
 
     public StepDetectionHandler(SensorManager sensorM ){
         this.mSensorManager = sensorM ;
